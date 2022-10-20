@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types';
+import { Wrapper } from './Profile.styled';
 
 //src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png" def
 export const Profile = ({ username, tag, location, avatar, stats }) => {
     return (
-        <div className="profile">
+        <Wrapper className="profile">
             <div className="description">
                 <img
                     src={ avatar }
@@ -29,7 +30,7 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
                     <span className="quantity">{ stats.likes }</span>
                 </li>
             </ul>
-        </div>
+        </Wrapper>
     );
 }
 
