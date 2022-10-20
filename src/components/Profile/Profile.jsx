@@ -1,4 +1,6 @@
-//src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
+import PropTypes from 'prop-types';
+
+//src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png" def
 export const Profile = ({ username, tag, location, avatar, stats }) => {
     return (
         <div className="profile">
@@ -30,3 +32,15 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
         </div>
     );
 }
+
+Profile.propTypes = {
+    username: PropTypes.string,
+    tag: PropTypes.string,
+    location: PropTypes.string,
+    avatar: PropTypes.string, 
+    stats: PropTypes.shape({
+        followers: PropTypes.number,
+        views: PropTypes.number,
+        likes: PropTypes.number,
+    })
+};
