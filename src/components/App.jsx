@@ -13,7 +13,10 @@ import transactions from "./transactions.json";
 export const App = () => {
   return (
     <>
-      <div>        --- 1 ---      </div>
+      <div>        --- 3 ---      </div>
+      <FriendList friends={friends} />;
+      <img src="https://textbook.edu.goit.global/lms-react-homework/v1/img/hw-01/friend-list.jpg" alt="dbg" />
+
       <Profile
         username={user.username}
         tag={user.tag}
@@ -21,16 +24,9 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <div>        --- 2 ---      </div>
-      <TransactionHistory items={transactions} />
-      <img src="https://textbook.edu.goit.global/lms-react-homework/v1/img/hw-01/transactions.jpg" alt="dbg" />
-      <div>        --- 3 ---      </div>
-      <img src="https://textbook.edu.goit.global/lms-react-homework/v1/img/hw-01/friend-list.jpg" alt="dbg" />
-      <FriendList friends={friends} />;
-      <div>        --- 4 ---      </div>
-      <img src="https://textbook.edu.goit.global/lms-react-homework/v1/img/hw-01/statistics.jpg" alt="dbg" />
       <Statistics title="Upload stats" stats={data} />
       <Statistics stats={data} />
+      <TransactionHistory items={transactions} />
     </>
   );
 };

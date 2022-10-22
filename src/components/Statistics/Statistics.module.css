@@ -1,0 +1,45 @@
+
+.statistics {
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    align-items: center;
+    background-color: #EFF3F6;
+}
+
+.block {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 4px;
+    overflow: hidden;
+    overflow-x: auto;
+    box-shadow: 0 2px 4px #CFDFDF;
+    background-color: white;
+}
+
+.title {
+    padding: 24px;
+    font-size: 15px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #5B5F63;
+}
+
+.statList {
+    display: flex;
+    color: #EEEEEE;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px 24px;
+    background-color: gray;
+}
+
+.label {
+    font-size: 12px;
+}
